@@ -1,0 +1,122 @@
+/* Usar la misma paleta de colores que las demás páginas */
+:root {
+    --primary-color: #e50914;
+    --secondary-color: #1e1e1e;
+    --text-color: #ffffff;
+    --highlight-color: #ffcc00;
+    --background-dark: #121212;
+    --card-bg: rgba(40, 40, 40, 0.9);
+    --footer-bg: #101010;
+}
+
+/* Ajustes generales */
+body {
+    background-color: var(--background-dark);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: var(--highlight-color);
+}
+
+.header nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header nav a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Información de la película */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón de compra */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #ff3333;
+    transform: translateY(-5px);
+}
+
+/* Sección de tráiler */
+.trailer {
+    margin-top: 40px;
+}
+
+.trailer h3 {
+    color: var(--highlight-color);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.ratio {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    border-top: 2px solid var(--highlight-color);
+    color: var(--text-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

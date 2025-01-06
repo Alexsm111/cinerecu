@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Página Principal Estilo Cómic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Bienvenido al Cine</h1>
+        <nav class="nav">
+            <a href="./info.html">Películas</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="slider-container" id="slider">
+            <div class="slider-item">
+                <a href="./infoSpiderman.html"><img src="./imagenes/spiderman.png" alt="Spider-Man"></a>
+            </div>
+            <div class="slider-item">
+                <a href="./infoBatman.html"><img src="./imagenes/batmanportada.png" alt="The Batman"></a>
+            </div>
+            <div class="slider-item">
+                <a href="./infoAntman.html"><img src="./imagenes/antman.png" alt="Ant-Man"></a>
+            </div>
+            <div class="slider-item">
+                <a href="./infoVenom.html"><img src="./imagenes/venom.png" alt="Venom"></a>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button id="prev">&#9664;</button>
+            <button id="next">&#9654;</button>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <h2>Ventajas de Visitarnos</h2>
+        <div class="advantage">
+            <img src="./imagenes/ventaja1.png" alt="Comida">
+            <p>Deliciosos combos de comida y bebida.</p>
+        </div>
+        <div class="advantage">
+            <img src="./imagenes/sonido.png" alt="Sonido">
+            <p>La mejor calidad de sonido envolvente.</p>
+        </div>
+        <div class="advantage">
+            <img src="./imagenes/salacine.png" alt="Sala">
+            <p>Salas cómodas y espaciosas para todos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CineMedac. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const items = document.querySelectorAll('.slider-item');
+        const totalItems = items.length;
+        let index = 0;
+
+        document.getElementById('next').addEventListener('click', () => {
+            index = (index + 1) % totalItems;
+            slider.style.transform = `translateX(-${index * slider.offsetWidth}px)`;
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            index = (index - 1 + totalItems) % totalItems;
+            slider.style.transform = `translateX(-${index * slider.offsetWidth}px)`;
+        });
+
+        window.addEventListener('resize', () => {
+            slider.style.transform = `translateX(-${index * slider.offsetWidth}px)`;
+        });
+    </script>
+</body>
+</html>

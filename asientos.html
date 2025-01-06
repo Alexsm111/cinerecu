@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Selección de Asientos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/asientos.css">
+</head>
+<body>
+   
+    <header class="header">
+        <h1>Selecciona tus Asientos</h1>
+        <nav class="nav">
+            <a href="./index.html">Inicio</a>
+            <a href="./info.html">Películas</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+   
+    <div class="asientos-container">
+        <div class="pantalla">Pantalla</div>
+        <p>Haz clic en los asientos disponibles para seleccionarlos:</p>
+        <div class="asientos">
+           
+            <div class="asiento">1</div>
+            <div class="asiento">2</div>
+            <div class="asiento ocupado">3</div>
+            <div class="asiento">4</div>
+            <div class="asiento">5</div>
+            <div class="asiento ocupado">6</div>
+            <div class="asiento">7</div>
+            <div class="asiento ocupado">8</div>
+            <div class="asiento">9</div>
+            <div class="asiento">10</div>
+            <div class="asiento">11</div>
+            <div class="asiento ocupado">12</div>
+            <div class="asiento">13</div>
+            <div class="asiento">14</div>
+            <div class="asiento ocupado">15</div>
+            <div class="asiento">16</div>
+            <div class="asiento">17</div>
+            <div class="asiento ocupado">18</div>
+            <div class="asiento">19</div>
+            <div class="asiento">20</div>
+            <div class="asiento">21</div>
+            <div class="asiento">22</div>
+            <div class="asiento ocupado">23</div>
+            <div class="asiento ocupado">24</div>
+            <div class="asiento">25</div>
+            <div class="asiento">26</div>
+            <div class="asiento ocupado">27</div>
+            <div class="asiento">28</div>
+            <div class="asiento">29</div>
+            <div class="asiento">30</div>
+            <div class="asiento">31</div>
+            <div class="asiento">32</div>
+            <div class="asiento">33</div>
+            <div class="asiento ocupado">34</div>
+            <div class="asiento">35</div>
+            <div class="asiento">36</div>
+        </div>
+        <a href="./pagoentrada.html" class="btn btn-primary" role="button">Comprar entradas</a>
+
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 CineMedac. Todos los derechos reservados.</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+
+   
+    <script>
+        document.querySelectorAll('.asiento').forEach(asiento => {
+            if (!asiento.classList.contains('ocupado')) {
+                asiento.addEventListener('click', () => {
+                    asiento.classList.toggle('seleccionado');
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ffcccb, #ffeb99, #b3d9ff);
+    color: #2c3e50;
+}
+
+.header {
+    background: url('comic-header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid #e74c3c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    text-shadow: 4px 4px #e74c3c;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #2c3e50;
+}
+
+.nav a:hover {
+    background-color: #c0392b;
+}
+
+.movie-list {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #3498db;
+}
+
+.movie {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.movie img {
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h3 {
+    color: #e74c3c;
+    text-shadow: 2px 2px #2c3e50;
+}
+
+.movie-info p {
+    margin: 0.5rem 0;
+}
+
+.showtimes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.showtimes button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #2c3e50;
+}
+
+.showtimes button:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    border-top: 5px solid #e74c3c;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+    color: #e74c3c;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

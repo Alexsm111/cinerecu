@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ffcccb, #ffeb99, #b3d9ff);
+    color: #2c3e50;
+}
+
+.header {
+    background: url('comic-header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid #e74c3c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    text-shadow: 4px 4px #e74c3c;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #2c3e50;
+}
+
+.nav a:hover {
+    background-color: #c0392b;
+}
+
+.asientos-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.pantalla {
+    margin: 1rem 0;
+    width: 100%;
+    background: #e74c3c;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.asientos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.asiento {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.asiento.seleccionado {
+    background-color: #28a745;
+}
+
+.asiento.ocupado {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    border-top: 5px solid #e74c3c;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+    color: #e74c3c;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
