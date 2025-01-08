@@ -1,21 +1,36 @@
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+   
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffcccb, #ffeb99, #d4f4fa);
-    color: #222;
+    background: linear-gradient(to right, #000000, #434343);
+    color: #0f0f0f;
 }
 
 .header {
-    background-color: #ff4d4f;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #e74c3c;
     text-shadow: 2px 2px #000;
-    border-bottom: 4px solid #222;
 }
 
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #c0392b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #e74c3c;
+}
 .pelicula-detalle {
     margin: 2rem auto;
     padding: 1.5rem;

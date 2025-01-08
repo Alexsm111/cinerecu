@@ -1,9 +1,9 @@
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+   
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #000000, #434343);
-    color: #f4f4f4;
+    color: #0f0f0f;
 }
 
 .header {
@@ -15,11 +15,6 @@ body {
     align-items: center;
     border-bottom: 5px solid #e74c3c;
     text-shadow: 2px 2px #000;
-}
-
-.header h1 {
-    font-size: 3rem;
-    margin: 0;
 }
 
 .nav a {
@@ -36,11 +31,10 @@ body {
 .nav a:hover {
     background-color: #e74c3c;
 }
-
 .pelicula-detalle {
     margin: 2rem auto;
     padding: 1.5rem;
-    background: #1c1c1c;
+    background: #fff3e0;
     border: 5px solid #000;
     border-radius: 15px;
     box-shadow: 10px 10px 0px #000;
@@ -53,7 +47,7 @@ body {
 }
 
 .pelicula-detalle h2 {
-    color: yellow;
+    color: #ff4d4f;
     font-size: 2rem;
     text-shadow: 1px 1px #000;
 }
@@ -64,10 +58,8 @@ body {
 }
 
 .pelicula-detalle strong {
-    color: yellow;
+    color: #000;
 }
-
-
 
 .ratio {
     border: 5px solid #000;
@@ -76,16 +68,16 @@ body {
 }
 
 .footer {
-    background-color: #1e1e1e;
-    color: yellow;
+    background-color: #ff4d4f;
+    color: white;
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
-    border-top: 4px solid #000;
+    border-top: 4px solid #222;
 }
 
 .footer a {
-    color: yellow;
+    color: #ffe600;
     text-decoration: none;
     font-weight: bold;
 }

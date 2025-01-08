@@ -1,25 +1,40 @@
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+   
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #000000, #434343);
-    color: #f4f4f4;
+    color: #0f0f0f;
 }
 
 .header {
-    background-color: #3c3c3c;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #e74c3c;
     text-shadow: 2px 2px #000;
-    border-bottom: 4px solid #000;
 }
 
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #c0392b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #e74c3c;
+}
 .pelicula-detalle {
     margin: 2rem auto;
     padding: 1.5rem;
-    background: #1c1c1c;
+    background: #fff3e0;
     border: 5px solid #000;
     border-radius: 15px;
     box-shadow: 10px 10px 0px #000;
@@ -32,7 +47,7 @@ body {
 }
 
 .pelicula-detalle h2 {
-    color: #ff0000;
+    color: #ff4d4f;
     font-size: 2rem;
     text-shadow: 1px 1px #000;
 }
@@ -43,7 +58,7 @@ body {
 }
 
 .pelicula-detalle strong {
-    color: #ff0000;
+    color: #000;
 }
 
 .ratio {
@@ -53,16 +68,16 @@ body {
 }
 
 .footer {
-    background-color: #3c3c3c;
+    background-color: #ff4d4f;
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
-    border-top: 4px solid #000;
+    border-top: 4px solid #222;
 }
 
 .footer a {
-    color: #ff0000;
+    color: #ffe600;
     text-decoration: none;
     font-weight: bold;
 }

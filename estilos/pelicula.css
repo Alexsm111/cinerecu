@@ -1,4 +1,4 @@
-/* Usar la misma paleta de colores que las demás páginas */
+
 :root {
     --primary-color: #e50914;
     --secondary-color: #1e1e1e;
@@ -9,7 +9,7 @@
     --footer-bg: #101010;
 }
 
-/* Ajustes generales */
+
 body {
     background-color: var(--background-dark);
     color: var(--text-color);
@@ -45,7 +45,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Información de la película */
+
 main {
     padding: 40px 20px;
 }
@@ -70,7 +70,7 @@ img {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Botón de compra */
+
 .btn-primary {
     background-color: var(--primary-color);
     border: none;
@@ -86,7 +86,7 @@ img {
     transform: translateY(-5px);
 }
 
-/* Sección de tráiler */
+
 .trailer {
     margin-top: 40px;
 }
@@ -107,7 +107,7 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Footer */
+
 footer {
     background-color: var(--footer-bg);
     border-top: 2px solid var(--highlight-color);
