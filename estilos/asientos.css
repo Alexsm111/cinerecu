@@ -4,19 +4,18 @@ body {
 }
 
 .header {
-    background: url('comic-header-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
     color: #fff;
     padding: 2rem 1rem;
-    border-bottom: 5px solid #e74c3c;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 5px solid #e74c3c;
+    text-shadow: 2px 2px #000;
 }
 
 .header h1 {
-    font-size: 2.5rem;
-    text-shadow: 4px 4px #e74c3c;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -33,6 +32,10 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     box-shadow: 2px 2px 0px #2c3e50;
+}
+
+.nav a:hover {
+    background-color: #c0392b;
 }
 
 .nav a:hover {
